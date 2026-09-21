@@ -1,6 +1,11 @@
-name: Manual Test Workflow
+name: Daily Commute Alert Workflow
 
 on:
+  # 1. 每天台灣時間早上 7:00 自動觸發 (對應 UTC 23:00)
+  schedule:
+    - cron: '0 23 * * *'
+
+  # 2. 保留手動 Run workflow 按鈕
   workflow_dispatch:
 
 jobs:
