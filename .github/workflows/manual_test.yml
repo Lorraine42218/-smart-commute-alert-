@@ -1,0 +1,11 @@
+name: Manual Test Workflow
+
+on:
+  workflow_dispatch: # 允許手動觸發
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: echo "Hello, world!"
