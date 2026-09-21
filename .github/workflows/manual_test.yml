@@ -1,7 +1,7 @@
 name: Manual Test Workflow
 
 on:
-  workflow_dispatch: # 允許手動觸發
+  workflow_dispatch:
 
 jobs:
   test:
